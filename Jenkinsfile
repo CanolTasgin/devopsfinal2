@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                git branch: 'main', url: 'https://github.com/CanolTasgin/devopsfinal2.git'
+                git branch: 'master', url: 'https://github.com/CanolTasgin/devopsfinal2.git'
                 script {
                     docker.withRegistry('https://registry.hub.docker.com', env.DOCKER_CREDS) {
                         def appImage = docker.build(env.DOCKER_IMAGE)

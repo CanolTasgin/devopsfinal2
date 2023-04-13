@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKER_IMAGE = "canolt/devopsfinal:latest"
-        DOCKER_CREDS = "ea83fe5e-7591-4043-b145-934600bf6bc1"
+        DOCKER_CREDS = "devops-final-docker-username-password"
         GITHUB_CREDS = "devops-final-git-token"
     }
 
